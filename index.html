@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main class="container">
+        <form action="" class="formCalls">
+            <label for="">Введите дату и время от</label>
+            <input type="datetime-local" name="" id="">
+            <label for="">Введите дату и время до</label>
+            <input type="datetime-local" name="" id="">
+            <button class="unloadCalls">Выгрузить звонки</button>           
+        </form>
+
+        <table id="callsList">
+            <thead>
+                <th>Имя сотрудника</th>
+                <th>Номер сотрудника</th>
+                <th>Статус</th>
+                <th>Время звонка</th>
+                <th>Дата звонка</th>
+            </thead>
+        </table>
+    </main>
+
+    <script async src="/my.js"></script>
 </body>
 </html>

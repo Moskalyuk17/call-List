@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    background: #000;
+    color: #fff;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.formCalls {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    padding: 16px;
+    width: 20vw;
+}
+
+.formCalls input{
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border: none;
+    padding: 6px;
+    color: gray;
+}
+
+.unloadCalls {
+    padding: 6px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#callsList {
+    margin-top: 2%;
+    list-style-type: none;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+    border-radius: 16px;
+    padding: 6px;
+}
+
+#callsList th {
+    font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+    color: #000;
+}
+
+#callsList td {
+    border: 1px solid #dddddd;
+	padding: 5px;
+}
