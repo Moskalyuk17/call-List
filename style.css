@@ -6,7 +6,6 @@
 body,html {
     background: #000;
     color: #fff;
-    height: 100%;
 }
 
 .container{
@@ -15,6 +14,7 @@ body,html {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    margin-top: 10%;
 }
 
 .formCalls {
@@ -22,7 +22,7 @@ body,html {
     flex-direction: column;
     border: 1px solid #fff;
     padding: 16px;
-    width: 20vw;
+    width: 20%;
 }
 
 .formCalls input{
