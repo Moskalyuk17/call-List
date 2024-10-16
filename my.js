@@ -1,54 +1,41 @@
 const calls = [
-    {id: '1', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '17.11.2024'},
-    {id: '2', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', dateTo: '14.12.2024', dataFrom: '07.11.2004'},
-    {id: '3', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', dateTo: '14.12.2024', dataFrom: '24.07.2014'},
-    {id: '4', nameEmployee: 'Vanya', idCLient: 'Vova', status: '', dateTo: '14.12.2024', dataFrom: '05.10.2021'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '1', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '17.11.2024', button: 'Обработать'},
+    {id: '2', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', dateTo: '14.12.2024', dataFrom: '07.11.2004', button: 'Обработать'},
+    {id: '3', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', dateTo: '14.12.2024', dataFrom: '24.07.2014', button: 'Обработать'},
+    {id: '4', nameEmployee: 'Vanya', idCLient: 'Vova', status: '', dateTo: '14.12.2024', dataFrom: '05.10.2021', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
 ];
 
 const callListElement = document.querySelector('#callsList');
@@ -84,6 +71,11 @@ for (let call of calls) {
     td5.textContent = call.dataFrom;
     tr.appendChild(td5);
 
+    let td6 = document.createElement('td');
+    td6.textContent = call.button;
+    td6.className += 'process';
+    tr.appendChild(td6);
+
     callListElement.appendChild(tr);
 }
 
@@ -112,6 +104,7 @@ document.querySelector('.unloadCalls').addEventListener('click', function(event)
             <th>Статус</th>
             <th>Дата окончание</th>
             <th>Дата начала</th>
+            <th>Обработчик</th>
         </thead>
     `;
 
@@ -147,6 +140,11 @@ document.querySelector('.unloadCalls').addEventListener('click', function(event)
         td5.textContent = call.dataFrom;
         tr.appendChild(td5);
 
+        let td6 = document.createElement('td');
+        td6.textContent = call.button;
+        td6.className += 'process';
+        tr.appendChild(td6);
+
         callListElement.appendChild(tr);
     });
 
@@ -161,3 +159,9 @@ document.querySelector('.unloadCalls').addEventListener('click', function(event)
     }
 });
 
+
+//Функия для обработки
+document.querySelector('.process').addEventListener('click', function() {
+    console.log("dsfsdfsa");
+
+})
