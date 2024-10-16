@@ -4,23 +4,21 @@
 }
 
 body,html {
-    background: #000;
+    background: linear-gradient(to top, #c7a6d6 , #7e57c2);
     color: #fff;
+    overflow: hidden;
 }
 
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    margin-top: 10%;
+    justify-content: space-between;
+    padding: 1%;
 }
 
 .formCalls {
     display: flex;
     flex-direction: column;
-    border: 1px solid #fff;
     padding: 16px;
     width: 20%;
 }
@@ -30,34 +28,151 @@ body,html {
     margin-bottom: 6%;
     border: none;
     padding: 6px;
-    color: gray;
+    color: #fff;
+    background: none;
+    border-top: 1px solid #716561;
+    border-bottom: 1px solid #716561;
 }
 
+.unloadCalls,
+.unloadCalls *,
+.unloadCalls :after,
+.unloadCalls :before,
+.unloadCalls:after,
+.unloadCalls:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
 .unloadCalls {
-    padding: 6px;
-    background: #fff;
-    border: none;
-    cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.unloadCalls:disabled {
+  cursor: default;
+}
+.unloadCalls:-moz-focusring {
+  outline: auto;
+}
+.unloadCalls svg {
+  vertical-align: middle;
+}
+.unloadCalls [hidden] {
+  display: none;
+}
+.unloadCalls {
+  --thickness: 0.3rem;
+  --roundness: 1.2rem;
+  --color: #eff6ff;
+  --opacity: 0.6;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background: none;
+  background: hsla(0, 0%, 100%, 0.2);
+  border: none;
+  border-radius: var(--roundness);
+  color: var(--color);
+  cursor: pointer;
+  display: block;
+  font-family: Poppins, "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.unloadCalls:hover {
+  background: hsla(0, 0%, 100%, 0.3);
+  filter: brightness(1.2);
+}
+.unloadCalls:active {
+  --opacity: 0;
+  background: hsla(0, 0%, 100%, 0.1);
+}
+.unloadCalls svg {
+  border-radius: var(--roundness);
+  display: block;
+  filter: url(#glow);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.unloadCalls rect {
+  fill: none;
+  stroke: var(--color);
+  stroke-width: var(--thickness);
+  rx: var(--roundness);
+  stroke-linejoin: round;
+  stroke-dasharray: 185%;
+  stroke-dashoffset: 80;
+  -webkit-animation: snake 2s linear infinite;
+  animation: snake 2s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+.unloadCalls:hover rect {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: var(--opacity);
+}
+@-webkit-keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+@keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+
+.divCall {
+    height: 100vh;
+    overflow: auto;
 }
 
 #callsList {
-    margin-top: 2%;
-    list-style-type: none;
-	border: 1px solid #dddddd;
-	border-collapse: collapse; 
-    border-radius: 16px;
-    padding: 6px;
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+    border-collapse: collapse;
 }
 
 #callsList th {
-    font-weight: bold;
-	padding: 5px;
-	background: #efefef;
-	border: 1px solid #dddddd;
-    color: #000;
+    background-color: #7e57c2;
+    position: sticky;
+    top: 0;
+	padding: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+	color: #f4f4f4;
+	border-top: 2px solid #716561;
+	border-bottom: 2px solid #716561;
 }
 
-#callsList td {
-    border: 1px solid #dddddd;
-	padding: 5px;
+#callsList tr td {
+	padding: 10px   ;
+	font-size: 14px;
+	line-height: 20px;
+	color: #f0f3f4;
+	border-bottom: 1px solid #716561;
 }

@@ -1,9 +1,54 @@
 const calls = [
-    {id: '1', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', timeCall: '21:20', dataCall: '17.11.2024'},
-    {id: '2', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', timeCall: '08:52', dataCall: '07.11.2004'},
-    {id: '3', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', timeCall: '17:54', dataCall: '24.07.2014'},
-    {id: '4', nameEmployee: 'Vanya', idCLient: 'Vova', status: '', timeCall: '15:28', dataCall: '05.10.2021'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', timeCall: '11:20', dataCall: '10.11.2024'},
+    {id: '1', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '17.11.2024'},
+    {id: '2', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', dateTo: '14.12.2024', dataFrom: '07.11.2004'},
+    {id: '3', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'no', dateTo: '14.12.2024', dataFrom: '24.07.2014'},
+    {id: '4', nameEmployee: 'Vanya', idCLient: 'Vova', status: '', dateTo: '14.12.2024', dataFrom: '05.10.2021'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
+    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024'},
 ];
 
 const callListElement = document.querySelector('#callsList');
@@ -21,22 +66,22 @@ for (let call of calls) {
 
     let td3 = document.createElement('td');
     if(call.status === 'yes') {
-        td3.style.background = 'green';
+        td3.style.background = '#88c999 ';
     } else if(call.status === 'no'){
-        td3.style.background = 'red';
+        td3.style.background = '#ff6f61';
     } else {
-        td3.style.background = 'orange';
+        td3.style.background = '#ffe680';
     }
     td3.textContent = call.status;
     td3.style.fontSize = '0';
     tr.appendChild(td3);
 
     let td4 = document.createElement('td');
-    td4.textContent = call.timeCall;
+    td4.textContent = call.dateTo;
     tr.appendChild(td4);
 
     let td5 = document.createElement('td');
-    td5.textContent = call.dataCall;
+    td5.textContent = call.dataFrom;
     tr.appendChild(td5);
 
     callListElement.appendChild(tr);
@@ -45,26 +90,32 @@ for (let call of calls) {
 document.querySelector('.unloadCalls').addEventListener('click', function(event) {
     event.preventDefault();
 
-    const inputDate = document.querySelector('#date').value;
-    const inputTime = document.querySelector('#time').value;
+    const inputDateFrom = document.querySelector('#dateFrom').value;
+    const inputDateTo = document.querySelector('#dateTo').value;
 
-    const formattedDate = inputDate.split('-').reverse().join('.');
+    const formattedDateFrom = inputDateFrom.split('-').reverse().join('.');
+    const formattedDateTo = inputDateTo.split('-').reverse().join('.');
 
+    // Фильтрация звонков, попадающих в диапазон
     const filteredCalls = calls.filter(call => {
-        return call.dataCall === formattedDate && call.timeCall === inputTime;
+        const callDateFrom = call.dataFrom.split('.').reverse().join('-');
+        const callDateTo = call.dateTo.split('.').reverse().join('-');
+        return callDateFrom >= inputDateFrom && callDateTo <= inputDateTo;
     });
 
+    // Очистка таблицы перед новым выводом
     const callListElement = document.querySelector('#callsList');
     callListElement.innerHTML = `
         <thead>
             <th>Имя сотрудника</th>
             <th>Номер сотрудника</th>
             <th>Статус</th>
-            <th>Время звонка</th>
-            <th>Дата звонка</th>
+            <th>Дата окончание</th>
+            <th>Дата начала</th>
         </thead>
     `;
 
+    // Вывод отфильтрованных данных
     filteredCalls.forEach(call => {
         let tr = document.createElement('tr');
 
@@ -77,25 +128,36 @@ document.querySelector('.unloadCalls').addEventListener('click', function(event)
         tr.appendChild(td2);
 
         let td3 = document.createElement('td');
-        if(call.status === 'yes') {
-            td3.style.background = 'green';
-        } else if(call.status === 'no'){
-            td3.style.background = 'red';
+        if (call.status === 'yes') {
+            td3.style.backgroundColor = '#A3D9A5';
+        } else if (call.status === 'no') {
+            td3.style.background = '#FF6F61';
         } else {
-            td3.style.background = 'orange';
+            td3.style.background = '#FFE680';
         }
         td3.textContent = call.status;
         td3.style.fontSize = '0';
         tr.appendChild(td3);
 
         let td4 = document.createElement('td');
-        td4.textContent = call.timeCall;
+        td4.textContent = call.dateTo;
         tr.appendChild(td4);
 
         let td5 = document.createElement('td');
-        td5.textContent = call.dataCall;
+        td5.textContent = call.dataFrom;
         tr.appendChild(td5);
 
         callListElement.appendChild(tr);
     });
+
+    // Если не нашлось ни одного звонка
+    if (filteredCalls.length === 0) {
+        let tr = document.createElement('tr');
+        let td = document.createElement('td');
+        td.colSpan = 5;
+        td.textContent = "Нет звонков за выбранный период";
+        tr.appendChild(td);
+        callListElement.appendChild(tr);
+    }
 });
+

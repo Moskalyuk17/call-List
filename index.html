@@ -9,22 +9,40 @@
 <body>
     <main class="container">
         <form action="" class="formCalls">
-            <label for="date">Введите дату</label>
-            <input type="date" name="date" id="date">
-            <label for="time">Введите время</label>
-            <input type="time" name="time" id="time">
-            <button class="unloadCalls">Выгрузить звонки</button>           
+            <label for="dateFrom">Введите дату от:</label>
+            <input type="date" name="dateFrom" id="dateFrom">
+            <label for="dateTo">Введите время до:</label>
+            <input type="date" name="dateTo" id="dateTo">
+            <button class="unloadCalls">
+                Выгрузить звонки
+                <svg>
+                  <defs>
+                    <filter id="glow">
+                      <fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
+                      <femerge>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="SourceGraphic"></femergenode>
+                      </femerge>
+                    </filter>
+                  </defs>
+                  <rect />
+                </svg>
+              </button>                        
         </form>
 
-        <table id="callsList">
-            <thead>
-                <th>Имя сотрудника</th>
-                <th>Номер сотрудника</th>
-                <th>Статус</th>
-                <th>Время звонка</th>
-                <th>Дата звонка</th>
-            </thead>
-        </table>
+        <div class="divCall">
+            <table id="callsList">
+                <thead>
+                    <th>Имя сотрудника</th>
+                    <th>Номер сотрудника</th>
+                    <th>Статус</th>
+                    <th>Дата окончание</th>
+                    <th>Дата Начало</th>
+                </thead>
+            </table>
+        </div>
     </main>
 
     <script async src="/my.js"></script>
