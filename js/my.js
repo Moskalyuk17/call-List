@@ -160,8 +160,17 @@ document.querySelector('.unloadCalls').addEventListener('click', function(event)
 });
 
 
-//Функия для обработки
-document.querySelector('.process').addEventListener('click', function() {
-    console.log("dsfsdfsa");
+function auth(event) {
+    event.preventDefault();
 
-})
+    var email = document.getElementById("login").value;
+    var password = document.getElementById("password").value;
+
+    if (email === "1" && password === "1") {
+         window.location.replace("/html/index.html");
+    } else {
+        alert("Invalid information");
+        return;
+    }
+}
+    

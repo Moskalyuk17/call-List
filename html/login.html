@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Звонки</title>
+</head>
+<body>
+    <section class="container_login">
+        <form action="" class="login" id="loginForm">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login" >
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit" class="unloadCalls" onclick="auth(event)">
+                Войти
+                <svg>
+                <defs>
+                    <filter id="glow">
+                    <feGaussianBlur result="coloredBlur" stdDeviation="5"></feGaussianBlur>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"></feMergeNode>
+                        <feMergeNode in="coloredBlur"></feMergeNode>
+                        <feMergeNode in="coloredBlur"></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                    </filter>
+                </defs>
+                <rect />
+                </svg>
+            </button>       
+        </form>
+    </section>
+    
+
+    <script src="/js/my.js"></script>
+</body>
+</html>
