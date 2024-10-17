@@ -174,3 +174,37 @@ function auth(event) {
     }
 }
     
+
+
+// create a new Date object
+const now = new Date();
+
+const daysOfWeek = [
+  'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+];
+const dayOfWeek = daysOfWeek[now.getDay()];
+
+const months = [
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+];
+const month = months[now.getMonth()];
+
+const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
+
+document.querySelector('.date').innerHTML = `${dayOfWeek}, ${month} ${time}`;
+
+const formCalls = document.querySelector(".formCalls");
+formCalls.style.display = 'none';
+
+document.querySelector(".openWindowFormCalls").addEventListener("click" ,function() {
+
+    if(formCalls.style.display === 'none'){
+        formCalls.style.display = 'flex';
+    } else if(formCalls.style.display === 'flex') {
+        formCalls.style.display = 'none';
+    }
+})
+
+for(var i = 0; i < calls.length; i++) {
+    document.querySelector("allCalls").innerHTML += array[i] + "<br>";
+}
