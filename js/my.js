@@ -174,16 +174,16 @@ function auth(event) {
 const now = new Date();
 
 const daysOfWeek = [
-  'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+  'Воскресенье', 'Понедельник', 'Вторник', 'Среда','Четверг', 'Пятница', 'Суббота'
 ];
 const dayOfWeek = daysOfWeek[now.getDay()];
 
 const months = [
-    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+    "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
 ];
 const month = months[now.getMonth()];
 
-const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
+const time = now.toLocaleTimeString('ru-RU', { hour: 'numeric', minute: 'numeric' });
 
 document.querySelector('.date').innerHTML = `${dayOfWeek}, ${month} ${time}`;
 
