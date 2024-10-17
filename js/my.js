@@ -14,29 +14,21 @@ const calls = [
     {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
     {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
     {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
-    {id: '5', nameEmployee: 'Vanya', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
+    {id: '5', nameEmployee: 'djglks', idCLient: 'Vova', status: 'yes', dateTo: '14.12.2024', dataFrom: '10.11.2024', button: 'Обработать'},
 ];
+
+function displayCallCounts() {
+    const allCallsCount = calls.length;
+    const verifiedCallsCount = calls.filter(call => call.status === 'yes').length;
+    
+    const allCallsSpan = document.querySelector('.numberOfCalls .allCalls');
+    const verifiedCallsSpan = document.querySelector('.numberOfCalls span:nth-child(2)'); 
+
+    allCallsSpan.textContent = `${allCallsCount} Всего звонков`;
+    verifiedCallsSpan.textContent = `${verifiedCallsCount} Проверенных`;
+}
+  
+displayCallCounts();
 
 const callListElement = document.querySelector('#callsList');
 
@@ -52,15 +44,16 @@ for (let call of calls) {
     tr.appendChild(td2);
 
     let td3 = document.createElement('td');
-    if(call.status === 'yes') {
-        td3.style.background = '#88c999 ';
-    } else if(call.status === 'no'){
-        td3.style.background = '#ff6f61';
-    } else {
-        td3.style.background = '#ffe680';
+    let checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = 'checkbox';
+    checkbox.disabled = true;
+    if (call.status === 'yes') {
+        checkbox.checked = true;
+    } else if (call.status === 'no') {
+        checkbox.checked = false;
     }
-    td3.textContent = call.status;
-    td3.style.fontSize = '0';
+    td3.appendChild(checkbox);
     tr.appendChild(td3);
 
     let td4 = document.createElement('td');
@@ -121,15 +114,16 @@ document.querySelector('.unloadCalls').addEventListener('click', function(event)
         tr.appendChild(td2);
 
         let td3 = document.createElement('td');
+        let checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'checkbox';
+        checkbox.disabled = true;
         if (call.status === 'yes') {
-            td3.style.backgroundColor = '#A3D9A5';
+            checkbox.checked = true;
         } else if (call.status === 'no') {
-            td3.style.background = '#FF6F61';
-        } else {
-            td3.style.background = '#FFE680';
+            checkbox.checked = false;
         }
-        td3.textContent = call.status;
-        td3.style.fontSize = '0';
+        td3.appendChild(checkbox);
         tr.appendChild(td3);
 
         let td4 = document.createElement('td');
@@ -205,6 +199,3 @@ document.querySelector(".openWindowFormCalls").addEventListener("click" ,functio
     }
 })
 
-for(var i = 0; i < calls.length; i++) {
-    document.querySelector("allCalls").innerHTML += array[i] + "<br>";
-}
