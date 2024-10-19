@@ -30,6 +30,7 @@ function displayCallCounts() {
   
 displayCallCounts();
 
+
 const callListElement = document.querySelector('#callsList');
 
 for (let call of calls) {
